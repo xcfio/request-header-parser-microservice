@@ -19,8 +19,8 @@
         "email": "SoftwareXPlus@gmail.com"
     },
     "scripts": {
-        "dev": "nodemon --ext .ts,.cts,.mts,.json --watch src --exec tsx --no-deprecation src/index.ts",
-        "test": "nodemon --ext .ts,.cts,.mts,.json --watch src --exec tsc --noEmit",
+        "dev": "tsx watch --no-deprecation src/index.ts",
+        "test": "tsc --watch --noEmit",
         "build": "esbuild src/index.ts --bundle --outfile=index.js --platform=node --packages=external",
         "start": "node index.js"
     },
